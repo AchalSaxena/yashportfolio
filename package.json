@@ -1,0 +1,24 @@
+{
+  "name": "yash-saxena-educator-portfolio",
+  "version": "1.0.0",
+  "description": "Official Portfolio of Yash Saxena - Geography Educator, Polity Mentor & Career Counselor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "Educator Portfolio",
+    "Yash Saxena",
+    "Geography Educator",
+    "Indian Polity Mentor",
+    "Node.js",
+    "Express"
+  ],
+  "author": "Yash Saxena",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
