@@ -632,23 +632,37 @@ button, input, select, textarea { font-family: inherit; }
     gap: 28px;
 }
 
-.video-card { overflow: hidden; }
+.video-card { overflow: hidden; cursor: pointer; }
 
 .video-thumb {
     position: relative;
-    height: 190px;
+    height: 200px;
+    overflow: hidden;
+    background: #0f172a;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.bg-yt-1 { background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%); }
-.bg-yt-2 { background: linear-gradient(135deg, #7c2d12 0%, #d97706 100%); }
-.bg-yt-3 { background: linear-gradient(135deg, #065f46 0%, #047857 100%); }
+.yt-thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover .yt-thumb-img {
+    transform: scale(1.06);
+}
 
 .play-overlay {
-    width: 50px;
-    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
     border-radius: 50%;
     background: #ff0000;
     color: #ffffff;
@@ -656,22 +670,24 @@ button, input, select, textarea { font-family: inherit; }
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    box-shadow: 0 0 20px rgba(255,0,0,0.5);
+    box-shadow: 0 0 25px rgba(255,0,0,0.6);
     transition: transform 0.2s ease;
+    z-index: 2;
 }
 
-.video-card:hover .play-overlay { transform: scale(1.15); }
+.video-card:hover .play-overlay { transform: translate(-50%, -50%) scale(1.15); }
 
 .v-duration {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.85);
     color: #fff;
     font-size: 0.75rem;
-    padding: 2px 8px;
+    padding: 3px 8px;
     border-radius: 4px;
     font-weight: 600;
+    z-index: 2;
 }
 
 .video-info { padding: 20px; }
