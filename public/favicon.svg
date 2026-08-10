@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="faviconGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="24" fill="url(#faviconGrad)" />
+  <!-- Book Bookmark Icon -->
+  <path d="M32 24 C32 20.686 34.686 18 38 18 H62 C65.314 18 68 20.686 68 24 V78 L50 65 L32 78 Z" fill="#FFFFFF" />
+  <path d="M42 34 H58 M42 44 H54" stroke="#4F46E5" stroke-width="4" stroke-linecap="round" />
+</svg>

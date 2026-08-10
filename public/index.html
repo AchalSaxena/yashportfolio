@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash Saxena | Top Geography Educator & Polity Mentor | Ujjain, MP</title>
-    <meta name="description" content="Official Portfolio of Yash Saxena - Premier Geography Educator, Indian Polity Mentor & Career Counselor in Ujjain, MP. 6+ years of experience guiding CBSE, ICSE, UPSC & MPPSC students. Book a free demo class today!">
+    <meta name="description" content="Official Portfolio of Yash Saxena - Premier Geography Educator, Indian Polity Mentor & Career Counselor in Ujjain, MP. Guiding CBSE, ICSE, UPSC & MPPSC students.">
     <meta name="keywords" content="Yash Saxena, Geography Educator, Indian Polity Mentor, Career Counselor Ujjain, UPSC Geography Teacher, MPPSC Polity Faculty, Talks With Yashu, Best Teacher Ujjain">
     <meta name="author" content="Yash Saxena">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="http://localhost:3000/">
+
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.svg">
 
     <!-- Open Graph / WhatsApp / Facebook Meta Tags (Viral Social Previews) -->
     <meta property="og:type" content="website">
@@ -26,25 +30,83 @@
     <meta name="twitter:description" content="Empowering 5000+ students across CBSE, ICSE, UPSC & MPPSC. Connect for demo classes and career counseling in Ujjain, MP.">
     <meta name="twitter:image" content="images/yash-saxena-photo.jpg">
 
-    <!-- JSON-LD Structured Data Schema.org (Google Search SEO Snippet) -->
+    <!-- JSON-LD Structured Data Schema.org Graph (Google Search Rich Snippets) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Yash Saxena",
-      "jobTitle": "Geography Educator & Polity Mentor",
-      "image": "images/yash-saxena-photo.jpg",
-      "description": "Professional Educator with 6+ years of experience teaching Geography, Indian Polity, and General Studies for CBSE, ICSE, UPSC, and MPPSC exams.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Ujjain",
-        "addressRegion": "Madhya Pradesh",
-        "addressCountry": "India"
-      },
-      "telephone": "+91-9039324732",
-      "sameAs": [
-        "https://youtube.com/@talkswithyashu?si=CtX24Q26kiPDl1S_",
-        "https://www.linkedin.com/in/yash-saxena-b3675112a/"
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "http://localhost:3000/#person",
+          "name": "Yash Saxena",
+          "jobTitle": "Geography Educator & Polity Mentor",
+          "image": "images/yash-saxena-photo.jpg",
+          "description": "Professional Educator with 6+ years of experience teaching Geography, Indian Polity, and General Studies for CBSE, ICSE, UPSC, and MPPSC exams.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ujjain",
+            "addressRegion": "Madhya Pradesh",
+            "addressCountry": "India"
+          },
+          "telephone": "+91-9039324732",
+          "sameAs": [
+            "https://youtube.com/@talkswithyashu?si=CtX24Q26kiPDl1S_",
+            "https://www.linkedin.com/in/yash-saxena-b3675112a/"
+          ]
+        },
+        {
+          "@type": "EducationalBusiness",
+          "@id": "http://localhost:3000/#organization",
+          "name": "Yash Saxena Educator Portfolio",
+          "url": "http://localhost:3000/",
+          "logo": "images/yash-saxena-photo.jpg",
+          "telephone": "+91-9039324732",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ujjain",
+            "addressRegion": "Madhya Pradesh",
+            "addressCountry": "India"
+          },
+          "priceRange": "Free Demo Available"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "http://localhost:3000/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How can I book a free demo class with Yash Saxena?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can click the 'Book Free Demo' button at the top of the page or WhatsApp directly on +91 9039324732. Our team will schedule your free live demo session in Ujjain or online."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which boards and exams are covered in teaching sessions?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yash Saxena provides specialized teaching for CBSE Board, ICSE Board, UPSC Civil Services (General Studies), and MPPSC State Services examinations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are both Online and Offline classes available in Ujjain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Classroom offline sessions are available in Ujjain, Madhya Pradesh, while live online classes and YouTube tutorials on Talks With Yashu are accessible globally."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is 1-on-1 Career Counseling available for school students?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, personalized 1-on-1 career guidance and stream selection counseling sessions are offered for students and parents. Contact via WhatsApp +91 9039324732 for booking."
+              }
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -152,7 +214,7 @@
                     <div class="teacher-photo-card card-shadow">
                         <div class="photo-wrapper">
                             <!-- Actual Photo of Yash Saxena -->
-                            <img src="images/yash-saxena-photo.jpg" alt="Yash Saxena - Geography Educator & Polity Mentor" class="teacher-avatar-img">
+                            <img src="images/yash-saxena-photo.jpg" alt="Yash Saxena - Geography Educator & Polity Mentor" class="teacher-avatar-img" fetchpriority="high">
                             <div class="badge-exp">
                                 <span class="exp-num">6+</span>
                                 <span class="exp-text">Years Exp.</span>
@@ -375,7 +437,7 @@
                     <!-- Video 1: Wu76BJI6fno -->
                     <div class="video-card card-shadow" data-video-id="Wu76BJI6fno">
                         <div class="video-thumb">
-                            <img src="https://img.youtube.com/vi/Wu76BJI6fno/hqdefault.jpg" alt="Talks With Yashu Featured Lecture" class="yt-thumb-img">
+                            <img src="https://img.youtube.com/vi/Wu76BJI6fno/hqdefault.jpg" alt="Talks With Yashu Featured Lecture" class="yt-thumb-img" loading="lazy">
                             <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                             <span class="v-duration"><i class="fa-brands fa-youtube"></i> Featured Lecture</span>
                         </div>
@@ -390,7 +452,7 @@
                     <!-- Video 2: BNiun_Ge6uU -->
                     <div class="video-card card-shadow" data-video-id="BNiun_Ge6uU">
                         <div class="video-thumb">
-                            <img src="https://img.youtube.com/vi/BNiun_Ge6uU/hqdefault.jpg" alt="Talks With Yashu Video 1" class="yt-thumb-img">
+                            <img src="https://img.youtube.com/vi/BNiun_Ge6uU/hqdefault.jpg" alt="Talks With Yashu Video 1" class="yt-thumb-img" loading="lazy">
                             <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                             <span class="v-duration"><i class="fa-brands fa-youtube"></i> HD Video</span>
                         </div>
@@ -405,7 +467,7 @@
                     <!-- Video 3: JRS6WAuw78o -->
                     <div class="video-card card-shadow" data-video-id="JRS6WAuw78o">
                         <div class="video-thumb">
-                            <img src="https://img.youtube.com/vi/JRS6WAuw78o/hqdefault.jpg" alt="Talks With Yashu Video 2" class="yt-thumb-img">
+                            <img src="https://img.youtube.com/vi/JRS6WAuw78o/hqdefault.jpg" alt="Talks With Yashu Video 2" class="yt-thumb-img" loading="lazy">
                             <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                             <span class="v-duration"><i class="fa-brands fa-youtube"></i> HD Video</span>
                         </div>
@@ -420,7 +482,7 @@
                     <!-- Video 4: h6-tUDuwJH8 -->
                     <div class="video-card card-shadow" data-video-id="h6-tUDuwJH8">
                         <div class="video-thumb">
-                            <img src="https://img.youtube.com/vi/h6-tUDuwJH8/hqdefault.jpg" alt="Talks With Yashu Video 3" class="yt-thumb-img">
+                            <img src="https://img.youtube.com/vi/h6-tUDuwJH8/hqdefault.jpg" alt="Talks With Yashu Video 3" class="yt-thumb-img" loading="lazy">
                             <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                             <span class="v-duration"><i class="fa-brands fa-youtube"></i> HD Video</span>
                         </div>
@@ -435,7 +497,7 @@
                     <!-- Video 5: QxQrxOGH7mc -->
                     <div class="video-card card-shadow" data-video-id="QxQrxOGH7mc">
                         <div class="video-thumb">
-                            <img src="https://img.youtube.com/vi/QxQrxOGH7mc/hqdefault.jpg" alt="Talks With Yashu Video 4" class="yt-thumb-img">
+                            <img src="https://img.youtube.com/vi/QxQrxOGH7mc/hqdefault.jpg" alt="Talks With Yashu Video 4" class="yt-thumb-img" loading="lazy">
                             <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                             <span class="v-duration"><i class="fa-brands fa-youtube"></i> HD Video</span>
                         </div>
@@ -450,7 +512,7 @@
                     <!-- Video 6: o2RDs0D_78E -->
                     <div class="video-card card-shadow" data-video-id="o2RDs0D_78E">
                         <div class="video-thumb">
-                            <img src="https://img.youtube.com/vi/o2RDs0D_78E/hqdefault.jpg" alt="Talks With Yashu Video 5" class="yt-thumb-img">
+                            <img src="https://img.youtube.com/vi/o2RDs0D_78E/hqdefault.jpg" alt="Talks With Yashu Video 5" class="yt-thumb-img" loading="lazy">
                             <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
                             <span class="v-duration"><i class="fa-brands fa-youtube"></i> HD Video</span>
                         </div>
@@ -477,7 +539,7 @@
                 <div class="gallery-grid">
                     <div class="gallery-card card-shadow">
                         <div class="gallery-img g-1">
-                            <img src="images/yash-saxena-photo.jpg" alt="Yash Saxena Teaching Class" class="gallery-img-fit">
+                            <img src="images/yash-saxena-photo.jpg" alt="Yash Saxena Teaching Class" class="gallery-img-fit" loading="lazy">
                         </div>
                         <div class="gallery-overlay">
                             <h4>Classroom Teaching Session</h4>
